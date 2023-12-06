@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav1{
+    height: 5vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ec6095;
+    align-items: center;
+}
+#ani{
+    font-size: 1.2rem;
+padding-left: 100px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#text{
+    padding-right:  30px;   
+}
+#text a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+}
+.nav2{
+    width: 100vw;
+    height: 13vh;
+padding-bottom: 10px;
+
+    
+}
+.image{
+    height: 13vh;
+    width: 15vw;
+    background-color: rgb(255, 255, 255);
+    z-index: -5;
+    display: inline;
+    justify-content: center;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.nav3{
+    
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 10px rgb(194, 194, 194);
+    background-color: rgb(251, 195, 251);
+    
+}
+.nav3 a{
+    text-decoration: none;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: black;
+    font-size: 1.4rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: all .5s ease-in-out;
+}
+.nav3 a:hover{
+
+    opacity: .8;
+    color: blueviolet;
+
+}
+
+/*banner sharts here*/
+
+
+.banners{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffff;
+    margin-top: 2px;
+    /* border: 2px solid purple; */
+
+}
+.slider{
+    width: 1200px;
+    height: 500px;
+    overflow: hidden;
+}
+.slides{
+    width: 500%;
+    height: 400px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+.slide img{
+    width: 1200px;
+    height: 600px;
+}
+
+
+
+.navigation{
+    position: relative;
+    margin-bottom: -20px;
+    display: flex;
+    width: 1200px;
+    justify-content: center;
+
+}
+.navbutton{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+.navbutton:not(:last-child){
+    margin-right: 15px;
+}
+.navbutton:hover{
+    background: rgb(255, 255, 255);
+    
+}
+
+#radio1:checked ~ .one{
+    margin-left: 0;
+}
+#radio2:checked ~ .one{
+    margin-left: -20%;
+}
+#radio3:checked ~ .one{
+    margin-left: -40%;
+}
+#radio4:checked ~ .one{
+    margin-left: -60%;
+}
+
+
+
+/*banner section*/
+
+.banner1{
+    display: flex;
+    width: 100vw;
+    height: 60vh;
+    /* background-color: rgb(255, 218, 226); */
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid purple; */
+    border-top: none;
+    
+}
+.banimage{
+    width: 90vw;
+    height: 52vh;
+    /* background-color: aqua; */
+    /* border: 1px solid purple; */
+}
+.banimage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* banner 2 starts here 
+ */
+.span1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 10px;
+}
+.banner2{
+    background-color: ;
+    width: 100vw;
+    height: 45vh;
+
+}
+.featured{
+    display: flex;
+    justify-content: space-evenly;
+}
+.items {
+    width: 260px;
+    height: 250px;
+}
+.items img{
+    height: 250px;
+    width: 250px;
+    border: 0.5px solid black;
+}
+.items p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.items span{
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.banner2  a{
+    text-decoration: none;
+    color: black;
+}
+.items :hover{
+    cursor: pointer;
+}
+
+.explore{
+    position: relative;
+    top: -020%;
+    left: 27%;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: rgb(255, 0, 162);
+    color: aliceblue;
+    border: 1px solid white;
+    font-weight: bold;
+    transition: all .5s ease-in-out;
+    border-radius: 10px;
+}
+.explore:hover{
+    background-color: white;
+    color:  rgb(255, 0, 162);
+    border: 1px solid  rgb(255, 0, 162);
+}
+footer {
+    text-align: center;
+    align-items: center;
+    width: 100vw;
+    height: 5vh;
+    background-color:rgb(255, 0, 162) ;
+    padding-top: 10px;
+    color: #ffff;
+    text-emphasis: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
